@@ -1,7 +1,6 @@
 
 # dependencies
 /node_modules
-/third/demo
+
 yarn.lock
 package-lock.json
-/preact 源码详读/
