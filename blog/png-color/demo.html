@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.icon, p{
+			display: block;
+			width: 20px;height: 20px;
+			overflow:hidden;
+			margin: 0 auto;
+		}
+		p{
+			width: 200px;height: 40px;
+		}
+		.icon-del{
+			background: url(delete.png) no-repeat center;
+		}
+		.icon > .icon{
+			position: relative;
+			left: -20px;
+			border-right: 20px solid transparent;
+			-webkit-filter: drop-shadow(rgb(255,0,0) 20px 0);
+			-o-filter: drop-shadow(rgb(255,0,0) 20px 0);
+			filter: drop-shadow(#f00 20px 0);
+		}
+	</style>
+</head>
+<body>
+	<p>原始图片</p>
+	<i class="icon icon-del"></i>
+	<p>可以变色的图片</p>
+	<i class="icon"> <i class="icon icon-del"></i></i>
+</body>
+</html>
+<!-- http://www.zhangxinxu.com/wordpress/2016/06/png-icon-change-color-by-css/ -->
